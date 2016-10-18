@@ -124,4 +124,5 @@ STATIC_URL = '/static/'
 try:
     from localsettings import *
 except ImportError:
+    print "could not find localsettings file.  trying to start anyway..."
     pass
